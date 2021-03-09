@@ -1,0 +1,144 @@
+header{
+  position: relative;
+}
+.contact-main-visual{
+  background-image: url("../img/contact-page-bgi@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 453px;
+  position: relative;
+}
+
+.contact-page-title{
+  display: inline-block;
+  font-size: 6.0rem;
+  font-style: italic;
+  font-family: 'Noto Serif';
+  margin-bottom: 80px;
+  line-height: 0.8;
+  letter-spacing: 0.1em;
+  color: white;
+  position: absolute;
+  top: calc(50% + 50px);
+  left: 50%;
+  transform: translate(-50%, calc(-50%));
+}
+
+.contact-back-title{
+  font-size: 9.0rem;
+  font-weight: bold;
+  color: #3A3D3F;
+  font-family: 'Noto Serif JP';
+  line-height: 1.667;
+  position: absolute;
+  left: 3.33%;
+  bottom: 40px;
+}
+
+form{
+  width: 700px;
+  margin: 100px auto 80px auto;
+}
+
+.form-parts{
+  margin-bottom: 25px;
+}
+
+.radio-button{
+  display: flex;
+  flex-direction: row;
+}
+
+.button-item{
+  display: inline-block;
+}
+
+.last-form-part{
+  margin-bottom: 80px;
+}
+
+.form-title{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="radio"]{
+  display: none;
+  position: relative;
+}
+
+.contact-radio{
+  margin-bottom: 7px;
+}
+
+.radio-label{
+  position: relative;
+  padding-left: 20px;
+  margin-right: 20px;
+  line-height: 1.4;
+}
+
+.radio-label:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #141414;
+}
+
+input[type="text"], input[type="tel"], input[type="email"]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid  #141414;
+}
+
+textarea{
+  width: 100%;
+  border: 1px solid #141414;
+  padding: 10px;
+  resize: none;
+}
+
+@media (max-width: 768px){
+  .contact-main-visual{
+    height: 360px;
+  }
+
+  .contact-page-title{
+    font-size: 3.0rem;
+    top: calc(50% + 30px);
+    margin-bottom: 0;
+  }
+
+  .contact-back-title{
+    font-size: 4.0rem;
+    bottom: 40px;
+    left: 4%;
+  }
+
+  form{
+    width: 92%;
+  }
+
+  .radio-button{
+    flex-direction: column;
+  }
+
+  .button-item{
+    display: block;
+  }
+
+  .button-item:not(:last-child){
+    margin-bottom: 5px;
+  }
+
+  .contact-radio{
+    margin-bottom: 15px;
+  }
+}
